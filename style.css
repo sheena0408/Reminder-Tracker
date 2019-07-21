@@ -1,0 +1,265 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F8F8FF;
+  height: 100vh;
+  overflow: hidden;
+}
+.content,.container-fluid{
+  height: 100%;
+  background: rgba(0,0,0,0.1);
+}
+form{
+  width: 40%;
+  margin: 0px auto;
+  padding: 1.5em;
+  border: 1px solid #B0C4DE;
+  background: rgba(255,255,255,0.6);
+  border-radius: 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: center;
+  margin: 3px;
+  width: 100%;
+}
+.input-group input {
+  height: 30px;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+textarea{
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+.input-group input:hover,textarea:hover{
+	box-shadow: 1px 1px 2px #999;
+}
+.err{
+  height: 60px;
+}
+.error,.pass {
+  width: 100%;
+  padding: 0.3em;   
+  color: #a94442; 
+  background: rgba(242,222,222,0.6); 
+  border-radius: 3px; 
+  text-align: left;
+  font-size: 14px;
+}
+.pass{
+  color: #327606; 
+  background: rgba(134,221,77,0.5);
+}
+.success {
+  color: #3c763d; 
+  background: rgba(223, 240, 216,0.5); 
+  border: 1px solid #3c763d;
+  width: 300px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+p .logout{
+	position: relative;
+	float: right;
+  margin-right: 0.8em;
+}
+a:hover{
+	text-decoration: none;
+}
+.content{
+	padding:20px;
+  margin: 0!important;
+}
+ul{
+	list-style:none;
+}
+li{
+	display:inline;
+	margin-right:30px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 3em; 
+}
+.modal-content {
+    background-color: #fefefe;
+    padding: 2em;
+    border: 1px solid #888;
+    width: 50%;
+}
+.input-group .file_upload,.input-group .file_upload:hover{
+	border: none;
+	box-shadow: none;
+}
+.modal label{
+	text-align: left;
+}
+textarea{
+	width: 100%;
+}
+.animate {
+    -webkit-animation: animatezoom 0.3s;
+    animation: animatezoom 0.3s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}  
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+th,td{
+    margin: 1px;
+    padding: 2px;
+    margin: 1px solid #000;
+    font-size: 13px;
+    text-align: center;
+}
+.left_side{
+  padding-left: 3.4em;
+}
+.right_side{
+  padding-right: 1.4em;
+}
+.delete{
+  text-align: center;
+}
+.delete a{
+  color: white;
+  background: #a52a2a;
+  padding: 0.4em 0.6em;
+  border-radius: 3px;
+  text-decoration: none;
+}
+#activeTasks,#assignTasks,#closeTasks {
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 60vh;  
+    padding-top: 1em;
+    margin:0!important;
+    overflow-y: auto;
+}
+#activeTasks{
+  display: block;
+}
+#activeTasks,#assignTasks ,#closeTasks {
+  background-color: rgba(255,255,255,0.9);
+}
+#activeTasks ::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+#activeTasks ::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#activeTasks::-webkit-scrollbar-thumb
+{
+  background-color: #000000;
+  border: 2px solid #555555;
+}
+#activeTasks::-webkit-scrollbar-hover
+{
+  background-color: #ddd;
+  border: 2px solid #555555;
+}
+.footer{
+    margin-bottom: 0!important;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+}
+.footer p{
+  margin-bottom: 0!important;
+}
+.infoBits{
+  position: absolute;
+  z-index: 1;
+  right:0;
+  width: 18vw;
+}
+.cntAct,.cntAss,.cntCl{
+  min-height:130px;
+  padding: 1em;
+  margin: 1.4em;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.9);
+  font-size: 18px;
+  box-shadow: 5px 5px 2px rgba(0,0,0,0.5);
+}
+.cntAct{
+  color: #f00;
+  border:2px solid #f00;
+}
+.cntAss{
+  color:#00f;
+  border:2px solid #00f;
+}
+.cntCl{
+  color:rgb(100,100,100);
+  border:2px solid #B0C4DE;
+}
+/*individual page formatting*/
+.main ,.log,.reg{
+  background: url('images/img1.jpg');
+  background-size: cover;
+}
+.main .heading{
+  background: rgba(0,0,0,0.1);
+  padding: 3em;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+}
+.buttons{
+  margin: 2em;
+}
+.buttons a{
+  margin: 2em;
+  box-shadow:2px 2px 5px #000;
+  padding: 0.8em 1.2em; 
+}
+.logscreen,.regscreen{
+  background: rgba(0,0,0,0.1);
+  height: 100%;
+}
+.logscreen h1,.regscreen h1{
+  padding: 0.81em 0; 
+}
+.ind{
+  background: url('images/img4.jpg');
+  background-size: cover;
+}
+.welcome{
+  color: #fff;
+  text-shadow: 3px 3px 3px #000;
+  font-size: 25px;
+  padding-left: 1.4em;
+}
